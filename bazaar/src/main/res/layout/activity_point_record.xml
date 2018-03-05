@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metshow.bz.module.point.activity.PointRecordActivity">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="94px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/ll_point"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginRight="10px"
+                android:layout_marginLeft="26px"
+                android:text="我的积分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_point"
+                android:textColor="@color/redWin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="60px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_record"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="10px"
+                android:src="@mipmap/icon_point_how"
+                android:layout_width="30px"
+                android:layout_height="30px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26px"
+                android:layout_marginRight="10px"
+                android:text="如何获得积分"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/layout_refresh_header"/>
+
+        <com.kwan.base.widget.observablescrollview.ObservableRecyclerView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+        </com.kwan.base.widget.observablescrollview.ObservableRecyclerView>
+
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/layout_loadmore_footer"/>
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</com.zhy.autolayout.AutoLinearLayout>

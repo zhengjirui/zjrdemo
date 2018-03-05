@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:background="@color/txt_white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="375px">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="375px"
+            android:src="@mipmap/item_default"/>
+
+        <TextView
+            android:paddingLeft="20px"
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_3"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textSize="36px"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:padding="20px"
+        android:textColor="#595968"
+        android:textSize="26px"/>
+
+    <TextView
+        android:padding="20px"
+        android:gravity="right"
+        android:id="@+id/tv_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更多图文详情 》"
+        android:textColor="@color/divider_color"
+        android:textSize="26px"/>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+          android:background="@color/divider_color"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/txt_white"
+        android:fillViewport="true"
+        custom:tabGravity="fill"
+        custom:tabIndicatorColor="@color/redWin"
+        custom:tabMode="fixed"
+        custom:tabSelectedTextColor="@color/redWin"
+        custom:tabTextColor="@color/txt_cobalt_blue"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color"/>
+</com.zhy.autolayout.AutoLinearLayout>

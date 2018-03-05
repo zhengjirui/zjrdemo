@@ -1,0 +1,23 @@
+<com.zhy.autolayout.AutoFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metshow.bz.module.shai.fragment.ShaiFragment">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_marginBottom="80px"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@mipmap/shai_camera"
+        android:layout_width="150px"
+        android:layout_height="150px"/>
+
+</com.zhy.autolayout.AutoFrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ImageViewTouch/ImageViewTouch.iml" filepath="$PROJECT_DIR$/ImageViewTouch/ImageViewTouch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bazaar/bazaar.iml" filepath="$PROJECT_DIR$/bazaar/bazaar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bazaar2.iml" filepath="$PROJECT_DIR$/bazaar2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imgselect/imgselect.iml" filepath="$PROJECT_DIR$/imgselect/imgselect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryBase/libraryBase.iml" filepath="$PROJECT_DIR$/libraryBase/libraryBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/numberprogress/numberprogress.iml" filepath="$PROJECT_DIR$/numberprogress/numberprogress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pre-lollipop-activity-transition/pre-lollipop-activity-transition.iml" filepath="$PROJECT_DIR$/pre-lollipop-activity-transition/pre-lollipop-activity-transition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sticker/sticker.iml" filepath="$PROJECT_DIR$/sticker/sticker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipelibrary/swipelibrary.iml" filepath="$PROJECT_DIR$/swipelibrary/swipelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ucrop/ucrop.iml" filepath="$PROJECT_DIR$/ucrop/ucrop.iml" />
+    </modules>
+  </component>
+</project>

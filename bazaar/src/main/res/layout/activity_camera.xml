@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="com.metshow.bz.module.commons.activity.CameraActivity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="28px"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_close"
+            android:layout_width="33px"
+            android:layout_height="33px"
+            android:src="@mipmap/ic_close"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_light"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:layout_toRightOf="@id/iv_close"
+            android:src="@mipmap/cam_light_off"/>
+
+        <ImageView android:layout_centerVertical="true"
+            android:id="@+id/iv_exchange"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginRight="45px"
+            android:layout_toRightOf="@+id/iv_light"
+            android:src="@mipmap/cam_exchange"/>
+
+        <ImageView android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:id="@+id/tv_ratio"
+            android:gravity="center"
+            android:src="@mipmap/ic_1_1"
+            android:layout_toRightOf="@+id/iv_exchange"
+            android:layout_weight="1"
+            android:layout_width="40px"
+            android:layout_height="40px"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="下一步"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <org.wysaid.view.CameraRecordGLSurfaceView
+        android:layout_below="@+id/ll_top"
+        android:id="@+id/myGLSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="1000px"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageView
+
+        android:id="@+id/iv_cam"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100px"
+        android:layout_marginTop="100px"
+        android:src="@mipmap/cam_default"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_image"
+        android:layout_width="match_parent"
+        android:layout_height="200px"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

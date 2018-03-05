@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BaseLibrary</string>
+    <string name="confirm">确定</string>
+    <string name="no_video_play_app">没有可用的视频播放应用</string>
+    <string name="record_audio">录音</string>
+    <string name="rationale_storage">需要读取存储权限以提供文件选择功能</string>
+
+    <string name="all_image">所有图片</string>
+    <string name="picture">图片</string>
+    <string name="take_picture">拍摄照片</string>
+    <string name="preview">预览</string>
+    <string name="preview_num">预览(%1$s)</string>
+    <string name="choose">选择</string>
+    <string name="done">完成</string>
+    <string name="use">使用</string>
+    <string name="done_num">完成(%1$s/%2$s)</string>
+    <string name="num_postfix">%1$s张</string>
+    <string name="message_max_num">你最多可以选择%1$s张图片</string>
+    <string name="save_ing">保存图片中…</string>
+
+    <string name="loading">正在加载中...</string>
+    <string name="load_failed">加载失败，请点我重试</string>
+    <string name="load_end">没有更多数据</string>
+
+</resources>

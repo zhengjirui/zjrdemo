@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metshow.bz.module.point.activity.RecordDetailActivity">
+    
+    <com.zhy.autolayout.AutoLinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:src="@mipmap/icon"
+            android:layout_width="match_parent"
+            android:layout_height="376px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:textSize="32px"
+                android:layout_marginBottom="34px"
+                android:layout_marginLeft="46px"
+                android:layout_marginTop="48px"
+                android:text="电子券标题"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_gravity="center"
+                android:textSize="32px"
+                android:text="666"
+                android:layout_marginRight="10px"
+                android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="32px"
+                android:layout_marginRight="36px"
+                android:text="积分"
+                android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_gravity="center_horizontal"
+            android:background="@color/divider_color"
+            android:layout_width="690px"
+            android:layout_height="2px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+
+           android:id="@+id/ll_state_dzq"
+            android:orientation="vertical"
+            android:paddingBottom="30px"
+            android:paddingLeft="36px"
+            android:paddingTop="26px"
+            android:layout_marginTop="22px"
+            android:layout_marginRight="52px"
+            android:layout_marginLeft="52px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zhy.autolayout.AutoLinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+
+                android:text="券码:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_qm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="xxxx"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+
+                android:layout_marginTop="18px"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:text="密码:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_mm"
+                    android:text="xxxx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+       <com.zhy.autolayout.AutoLinearLayout
+           android:id="@+id/ll_state_product"
+           android:orientation="horizontal"
+           android:paddingBottom="30px"
+           android:paddingLeft="36px"
+           android:paddingTop="26px"
+           android:layout_marginTop="22px"
+           android:layout_marginRight="52px"
+           android:layout_marginLeft="52px"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:text="订单状态："
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/tv_state"
+               android:text="待发货"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"/>
+
+
+       </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:paddingLeft="52px"
+            android:layout_marginTop="58px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <TextView
+                android:text="订单编号："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:text="1231232131244"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

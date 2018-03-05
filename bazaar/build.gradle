@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.metshow.bz"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 32
+        versionName "2.1.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+
+        multiDexEnabled = true
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "default_channel"]
+    }
+    productFlavors {
+        default_channel {}
+        wandoujia {}
+        _360 {}
+        qq {}
+        xiaomi {}
+        baidu {}
+        huawei {}
+        jingli {}
+        ppzs {}
+        jinli_ps {}
+        leshi {}
+        anzhi {}
+    }
+
+
+    flavorDimensions "versionCode"
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    signingConfigs {
+
+        debug {
+            storeFile file('bazaar.keystore.jks')
+            storePassword "bazaar"
+            keyAlias "bazaar"
+            keyPassword "bazaar"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+//    aaptOptions { cruncherEnabled = false }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    compile project(':libraryBase')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5756_lite.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_Sina.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_view.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile project(':PushSDK')
+    compile project(':numberprogress')
+    compile project(':imgselect')
+    compile project(':pre-lollipop-activity-transition')
+    compile project(':swipelibrary')
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.lguipeng.bubbleview:library:1.0.0'
+    compile project(':ImageViewTouch')
+    compile project(':library')
+    compile project(':ucrop')
+    implementation project(':sticker')
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+}

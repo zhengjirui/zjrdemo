@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_white"
+    android:divider="@drawable/shape_dash"
+    android:orientation="vertical"
+    android:showDividers="end">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="19px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/iv_avatar"
+            android:layout_width="80px"
+            android:layout_height="80px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#3b3b48"
+                    android:textSize="24px"/>
+
+                <com.zhy.autolayout.AutoFrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|right"
+                        android:textColor="#8C8C99"
+                        android:textSize="24px"/>
+
+                    <com.github.library.bubbleview.BubbleTextVew
+                        android:id="@+id/tv_jb"
+                        android:layout_width="100px"
+                        android:layout_height="50px"
+                        android:gravity="center"
+                        android:text="举报"
+                        android:textColor="@color/txt_white"
+                        android:visibility="gone"
+                        app:angle="4dp"
+                        app:arrowHeight="10dp"
+                        app:arrowLocation="right"
+                        app:arrowPosition="15px"
+                        app:arrowWidth="4dp"
+                        app:bubbleColor="@color/bar_grey_90"/>
+
+                </com.zhy.autolayout.AutoFrameLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_more"
+                    android:layout_width="40px"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:id="@+id/iv_more"
+                        android:layout_width="20px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/dot3"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <TextView
+                android:id="@id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#595968"
+                android:textSize="24px"/>
+
+            <ImageView
+                android:id="@+id/iv_content"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/fleshColor"/>
+    
+    <com.metshow.bz.commons.widget.DashedLine
+        android:visibility="gone"
+        android:id="@+id/dashline"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

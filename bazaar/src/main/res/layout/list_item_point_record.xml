@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="174px"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_marginRight="34px"
+            android:layout_marginLeft="60px"
+            android:src="@mipmap/icon"
+            android:layout_width="130px"
+                   android:layout_height="130px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout 
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:textSize="28px"
+                android:textColor="@color/black"
+                android:text="name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_marginTop="12px"
+                android:textSize="24px"
+                android:text="未知"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+        </com.zhy.autolayout.AutoLinearLayout>
+        
+        <ImageView
+            android:src="@mipmap/icon_next"
+            android:layout_marginRight="70px"
+            android:layout_width="30px" android:layout_height="30px"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:background="@color/divider_color"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

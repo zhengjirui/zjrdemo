@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">芭莎in</string>
+    <string name="points_note">
+        规则如下：用户可以通过进行社区内的各种互动来增长积分，积分的价值在于获得社区内的特权，积分越多，特权越大。（后期会通过产品迭代不断更新特权，请留意）\n
+        积分的获取\n
+        \n
+        如何get积分
+        \n
+        1)用户本人行为
+        \n
+        注册+10分\n
+        完善个人资料一项+1分\n
+        发帖+10分(每日上限100)\n
+        评论+2分(每日上限20)\n
+        点赞+1分(每日上限20)\n
+        关注+1分(每日上限20，总共最多200分)\n
+        收藏+1分(每日上限10，总共最多100分)\n
+        分享+5分(每日上限50)\n
+        点击购买+1分(每日上限50)\n
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_point_detail">PointDetailActivity</string>
+</resources>

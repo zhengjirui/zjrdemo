@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+    android:id="@+id/swipeToLoadLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_white">
+
+    <include
+        android:id="@id/swipe_refresh_header"
+        layout="@layout/layout_refresh_header"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.metshow.bz.module.commons.activity.FriendDetailActivity">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="40px">
+
+                <com.kwan.base.widget.CircularImage
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:src="@mipmap/default_user_icon"/>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/txt_cobalt_blue"
+                            android:textSize="14sp"/>
+
+                        <ImageView
+                            android:layout_marginLeft="10px"
+                            android:id="@+id/iv_isVip"
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:src="@mipmap/vip_icon"/>
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="1"
+                        android:textColor="@color/txt_cobalt_blue"
+                        android:textSize="12sp"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_follow_state"
+                        android:layout_width="140px"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_around_gray_stroke"
+                        android:gravity="center"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:text="已关注"
+                        android:textColor="@color/txt_cobalt_blue"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_chat"
+                        android:layout_width="140px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:background="@drawable/shape_around_gray_stroke"
+                        android:gravity="center"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:text="聊天"
+                        android:textColor="@color/txt_cobalt_blue"
+                        android:textSize="12sp"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <include layout="@layout/user_detail_numinfo"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/white"/>
+
+            <com.kwan.base.widget.observablescrollview.ObservableRecyclerView
+                android:id="@+id/rl_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include
+        android:id="@id/swipe_load_more_footer"
+        layout="@layout/layout_loadmore_footer"/>
+
+</com.aspsine.swipetoloadlayout.SwipeToLoadLayout>

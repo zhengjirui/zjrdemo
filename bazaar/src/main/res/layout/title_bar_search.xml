@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:id="@+id/ll_search"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="0dp"
+        android:layout_margin="20px"
+        android:background="@drawable/shape_around_gray_bg"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_margin="10px"
+            android:id="@+id/iv_title_search"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:src="@mipmap/title_search_icon"/>
+
+        <EditText
+            android:textColor="@color/txt_cobalt_blue"
+            android:textSize="24px"
+            android:hint="搜索"
+            android:background="@null"
+            android:textColorHint="@color/divider_color"
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:textSize="28px"
+        android:textColor="#282D33"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="30px"
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="取消"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

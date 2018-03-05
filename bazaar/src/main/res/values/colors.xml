@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F9F9F9</color>
+    <color name="colorPrimaryDark">#958D92</color>
+    <color name="colorAccent">#CF4950</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="bazzarRed">#CF4950</color>
+    <color name="purplrGrey">#958D92</color>
+    <color name="purplrTaro">#9D899A</color>
+    <color name="redWin">#D00A29</color>
+    <color name="gray">#878787</color>
+    <color name="grayBackground">#E0E0E0</color>
+    <color name="grayBackgroundLight">#E3E2E2</color>
+    <color name="fleshColor">#E1DBDD</color>
+    <color name="white">#F9F9F9</color>
+    <color name="redWin2">#7B0024</color>
+    <color name="blueGray">#393F48</color>
+    <color name="orange">#C89068</color>
+
+
+
+    <color name="thirty_transparent_black">#4d000000</color>
+
+    <color name="startBg">#d10023</color>
+</resources>

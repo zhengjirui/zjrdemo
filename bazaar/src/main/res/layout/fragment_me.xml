@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/user_detail_header"/>
+
+        <include layout="@layout/user_detail_numinfo"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="20px"
+            android:paddingLeft="40px"
+            android:paddingRight="60px"
+            android:paddingTop="20px">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/icon_me_bzactivity"/>
+
+            <TextView
+                android:textSize="26px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="参加的活动"/>
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/icon_next"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_my"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20px"
+            android:paddingLeft="40px"
+            android:paddingRight="60px"
+            android:paddingTop="20px"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/icon_my_commnet"/>
+
+            <TextView
+                android:textSize="26px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的评论"/>
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/icon_next"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20px"
+            android:paddingLeft="40px"
+            android:paddingRight="60px"
+            android:paddingTop="20px"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/icon_me_point"/>
+
+            <TextView
+                android:textSize="26px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="积分换礼"/>
+
+            <TextView
+                android:textSize="24px"
+                android:textColor="#D8A433"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="独家好礼免费领!"/>
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/icon_next"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20px"
+            android:paddingLeft="40px"
+            android:paddingRight="60px"
+            android:paddingTop="20px"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/icon_me_share"/>
+
+            <TextView android:textSize="26px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="告诉朋友"/>
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/icon_next"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20px"
+            android:paddingLeft="40px"
+            android:paddingRight="60px"
+            android:paddingTop="20px"
+            android:background="@color/txt_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/icon_me_setting"/>
+
+            <TextView android:textSize="26px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设置"/>
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/icon_next"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ImageViewTouch" />
+            <option value="$PROJECT_DIR$/PushSDK" />
+            <option value="$PROJECT_DIR$/bazaar" />
+            <option value="$PROJECT_DIR$/imgselect" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/libraryBase" />
+            <option value="$PROJECT_DIR$/numberprogress" />
+            <option value="$PROJECT_DIR$/pre-lollipop-activity-transition" />
+            <option value="$PROJECT_DIR$/sticker" />
+            <option value="$PROJECT_DIR$/swipelibrary" />
+            <option value="$PROJECT_DIR$/ucrop" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

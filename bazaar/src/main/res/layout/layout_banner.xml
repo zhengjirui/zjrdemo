@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5px"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="525px"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_banner_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20px"
+        android:layout_alignBottom="@+id/vp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="xxx"
+        android:id="@+id/tv_banner_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/image_overlay2"
+        android:padding="5dp"
+        android:textColor="@color/txt_white"
+        android:textSize="30px"
+        android:visibility="invisible"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>
+

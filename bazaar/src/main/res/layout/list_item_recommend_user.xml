@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_gravity="center"
+            android:src="@mipmap/avator_bg"/>
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_gravity="center"
+            android:src="@mipmap/title_user_icon"/>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            fontPath="fonts/hjt.ttf"
+            android:textColor="@color/txt_cobalt_blue"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26px"/>
+
+        <ImageView
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_marginLeft="5px"
+            android:src="@mipmap/vip_icon"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/tv_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_red_bg"
+        android:paddingBottom="5px"
+        android:paddingLeft="8px"
+        android:paddingRight="8px"
+        android:paddingTop="5px"
+        android:text="+关注"
+        android:textColor="@color/redWin"
+        android:textSize="20px"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

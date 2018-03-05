@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.metshow.bz"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:name=".commons.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="580033fa67e58e4d5a003387">
+        </meta-data>
+        <!-- 消息推送 -->
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="42e91e9cd39e7509b32f447b2d08fd16">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}">
+        </meta-data>
+
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <!-- wx -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- qq -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".module.splash.SplashActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="metshow.com"
+                    android:scheme="bazaar"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.main.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.me.activity.UserInfoEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.me.activity.FavoriteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.me.activity.PointsNoteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.me.activity.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.in.activity.ArticlePicGroupActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.shai.TopicListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.search.ArticleSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.me.activity.FansOrFollowActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.main.GuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.WebActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.FriendDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.in.activity.ArticleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.shai.ProductActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.shai.TopicActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.login.DologinActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.login.RegOrForgotActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.ImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.yongchun.library.view.ImageSelectorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yongchun.library.view.ImagePreviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yongchun.library.view.ImageCropActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.CommentActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.HotUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.RecorderActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.SendTopicActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.TagActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.TopicSubjectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.login.RegFindActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.WebProductActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.BannerTopicActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.buy.SpecialActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.me.activity.MyTopicActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.WebShareActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.search.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.search.BuySearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.me.activity.MyActivityActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.shai.BZActivityInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.me.activity.GrandPicActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.message.MessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.BannerTopicActivity$AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.commons.activity.UserFeedBackActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.message.MessageListActivity"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name=".commons.service.ChkVersionService"
+            android:exported="false">
+        </service>
+
+        <activity
+            android:name=".module.me.activity.UserModifyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.me.activity.MotifPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.me.activity.TagTopicListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.commons.activity.PhotoEditActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.commons.activity.CameraActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".module.point.activity.PointProductListActivity">
+        </activity>
+        <activity
+            android:name=".module.point.activity.PointDetailActivity"
+            android:label="@string/title_activity_point_detail">
+        </activity>
+        <activity android:name=".module.point.activity.PointRecordActivity">
+        </activity>
+        <activity android:name=".module.point.activity.RecordDetailActivity">
+        </activity>
+        <activity android:name=".module.point.activity.PointProductActivity">
+        </activity>
+        <activity android:name=".module.me.activity.MyCommentActivity">
+        </activity>
+    </application>
+
+</manifest>

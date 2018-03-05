@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#F9F9F9</color>
+    <color name="colorPrimaryDark">#958D92</color>
+    <color name="colorAccent">#CF4950</color>
+
+    <color name="colorMain">#D00A29</color>
+    <color name="transparent">#00000000</color>
+    <color name="divider_color">#dcdcdc</color>
+    <color name="BgToolBar">#373B3E</color>
+    <color name="BgRv">#191919</color>
+    <color name="BgItem">#353535</color>
+    <color name="ShadowItem">#94333232</color>
+    <color name="BgRvFileDivider">#EEEEEE</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_70">#ADFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_3">#333333</color>
+    <color name="green">#43c117</color>
+    <color name="green_70">#AD43c117</color>
+    <color name="bar_grey">#393a3e</color>
+    <color name="bar_grey_90">#dd393a3e</color>
+    <color name="grey">#999999</color>
+    <color name="content_grey">#353535</color>
+    <color name="image_overlay">#20000000</color>
+    <color name="image_overlay2">#80000000</color>
+
+    <color name="redWin">#D00A29</color>
+
+    <!--文字颜色-->
+    <color name="txt_note_red">#D21E22</color>
+    <color name="txt_cobalt_blue">#393F48</color>
+    <color name="txt_gray">#878787</color>
+    <color name="txt_white">#ffffff</color>
+    <color name="txt_blue">#007aff</color>
+</resources>

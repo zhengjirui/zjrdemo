@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="70px"
+        android:layout_gravity="center"
+        android:background="@mipmap/info_head"
+        android:gravity="center"
+        android:text="活动图片"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <com.kwan.base.widget.observablescrollview.ObservableRecyclerView
+        android:id="@+id/rl_pic"
+        android:layout_margin="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:padding="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="更多图片 》"
+        android:textSize="26px"
+        android:textColor="#969696"/>
+
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="70px"
+        android:layout_gravity="center"
+        android:background="@mipmap/info_head"
+        android:gravity="center"
+        android:text="用户评论"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <com.kwan.base.widget.observablescrollview.ObservableRecyclerView
+        android:id="@+id/rl_comment"
+        android:layout_margin="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginBottom="20px"
+        android:id="@+id/tv_send"
+        android:layout_marginTop="60px"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@color/bar_grey"
+        android:textColor="@color/txt_white"
+        android:gravity="center"
+        android:layout_width="700px"
+        android:layout_height="90px"
+        android:text="发表评论"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text=" 规则如下：用户可以通过进行社区内的各种互动来增长积分，积分的价值在于获得社区内的特权，积分越多，特权越大。（后期会通过产品迭代不断更新特权，请留意）"
+            android:textColor="@color/redWin"
+            tools:context="com.metshow.bz.module.me.activity.PointsNoteActivity"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="积分的获取"
+            android:textColor="@color/redWin"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:context="com.metshow.bz.module.me.activity.PointsNoteActivity"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="如何get积分"
+            android:textColor="@color/redWin"
+            tools:context="com.metshow.bz.module.me.activity.PointsNoteActivity"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="  1)    用户本人行为"
+            android:textColor="@color/txt_cobalt_blue"
+            android:textSize="16sp"
+            tools:context="com.metshow.bz.module.me.activity.PointsNoteActivity"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="注册+10\n分完善个人资料一项+1\n分发帖+10分(每日上限100)\n评论+2分(每日上限20)\n点赞+1分(每日上限20)\n关注+1分(每日上限20,总共最多200分)\n收藏+1分(每日上限10,总共最多100分)\n分享+5分(每日上限50)\n点击购买+1分(每日上限50)"
+            android:textColor="@color/txt_gray"
+            tools:context="com.metshow.bz.module.me.activity.PointsNoteActivity"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text=" 2)    用户鼓励行为"
+            android:textColor="@color/txt_cobalt_blue"
+            android:textSize="16sp"
+            tools:context="com.metshow.bz.module.me.activity.PointsNoteActivity"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="得到1条评论+1分(每日上限100)\n得到1个赞+1分(每日上限50)\n被分享1次+5分(每日上限100)\n粉丝数\n10    1分\n20    2分\n50    5分\n100    10分\n200 20分\n500    50分\n1000 10分\n2000 20分\n5000 50分\n1w 100分\n2w 200分\n5w 500分\n10w    100 分\n20w 200分\n50w    500分"
+            android:textColor="@color/txt_gray"
+            tools:context="com.metshow.bz.module.me.activity.PointsNoteActivity"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+

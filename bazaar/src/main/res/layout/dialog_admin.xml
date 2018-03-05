@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="center"
+        android:background="@color/txt_white"
+        android:layout_width="match_parent"
+        android:layout_height="420px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="420px"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="300px"
+                android:layout_height="match_parent"
+                android:background="@color/txt_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:textColor="@color/txt_cobalt_blue"
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="xxx"
+                    android:textSize="30px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/txt_cobalt_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="10dp"
+                    android:textColor="@color/txt_white"
+                    android:id="@+id/tv_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_add_follow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape_red_bg_full"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="关注作者"
+                    android:textColor="@color/txt_white"
+                    android:textSize="30px"
+                />
+
+                <TextView
+                    android:textColor="@color/txt_white"
+                    android:padding="10dp"
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <ProgressBar
+android:id="@+id/progressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

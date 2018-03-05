@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="210px"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="112px"
+            android:layout_marginBottom="3px"
+            android:layout_height="112px"
+            android:layout_gravity="center"
+            android:src="@mipmap/title_user_icon"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/iv_isVip"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_vip_gif"/>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:maxLines="1"
+            android:maxWidth="150px"
+            android:ellipsize="end"
+            android:id="@+id/tv_name"
+            android:textColor="@color/txt_cobalt_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10px"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:src="@mipmap/vip_icon"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_follow"
+        android:layout_width="100px"
+        android:gravity="center"
+        android:layout_height="40px"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_reg_btn_bg"
+        android:paddingBottom="5px"
+        android:paddingLeft="15px"
+        android:paddingRight="15px"
+        android:paddingTop="5px"
+        android:text="已关注"
+        android:textColor="@color/txt_white"
+        android:textSize="20px"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

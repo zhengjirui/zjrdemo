@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    android:padding="10px"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220px"
+    android:layout_height="220px">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_icon"
+        android:layout_width="200px"
+        android:layout_height="200px"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_tag"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10px"
+        android:src="@mipmap/cam_finished"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

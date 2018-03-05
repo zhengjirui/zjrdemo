@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="187px"
+    android:gravity="center"
+    android:layout_height="187px">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_icon"
+        android:layout_width="187px"
+        android:layout_height="187px"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_retry"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="点击重试"/>
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    </WebView>
+
+
+
+</com.zhy.autolayout.AutoFrameLayout>
